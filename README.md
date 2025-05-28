@@ -1,16 +1,28 @@
-PostgreSQL Performance Analysis: Optimized vs. Misconfigured Setups
-In this project, a performance analysis of the PostgreSQL database was conducted by comparing optimized and misconfigured configurations. The study examined how different PostgreSQL configuration settings affect the execution of parallel queries using threads, as well as their impact on system resource utilization.
+# PostgreSQL Performance Analysis: Optimized vs. Misconfigured Setups
 
-The experiments aimed to evaluate the efficiency of configuration parameters in supporting multi-threaded operations and ensuring optimal use of CPU and memory resources during parallel query execution.
+This project presents a performance analysis of the PostgreSQL database by comparing **optimized** and **misconfigured** configurations. The study investigates how various PostgreSQL configuration parameters influence:
 
-Tools & Technologies
-Oracle VirtualBox
+- The execution of **parallel queries** using Python threads  
+- **CPU and memory utilization** during query processing
 
-Ubuntu 22.04 LTS
+The goal is to evaluate the efficiency of configuration settings in enabling multi-threaded operations and ensuring effective system resource usage.
 
-PostgreSQL 17
+## 🛠 Tools & Technologies
 
-Python (concurrent.futures, psutil)
+- **Oracle VirtualBox** – for creating isolated virtual environments  
+- **Ubuntu 22.04 LTS** – as the operating system on virtual machines  
+- **PostgreSQL 17** – the database system under test  
+- **Python** – using `concurrent.futures` for threading and `psutil` for resource monitoring  
+- **Linux utilities** – `top` and `htop` for real-time system performance tracking
 
-Linux command-line tools (top, htop)
+##  Summary
+
+Two virtual servers with identical hardware specs (8 GB RAM, 4 CPU cores) were used:
+- One with **optimized PostgreSQL configuration**
+- One with **intentionally misconfigured parameters**
+
+A set of parallel query executions was run on each setup, and performance metrics were collected and compared to highlight the impact of configuration quality.
+
+---
+
 
