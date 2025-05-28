@@ -7,7 +7,7 @@ This project presents a performance analysis of the PostgreSQL database by compa
 
 The goal is to evaluate the efficiency of configuration settings in enabling multi-threaded operations and ensuring effective system resource usage.
 
-## 🛠 Tools & Technologies
+## Tools & Technologies
 
 - **Oracle VirtualBox** – for creating isolated virtual environments  
 - **Ubuntu 22.04 LTS** – as the operating system on virtual machines  
